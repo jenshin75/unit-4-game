@@ -75,31 +75,31 @@
 }
 
 .image {
-  width: 100px;
+  width: 75px;
   height: 75px;
   padding: 10px;
   background-color: white;
 }
 
 #row5 {
-  width: 505px;
+  width: 498px;
   height: 25px;
   background-color: green;
   color: white;
   font-size: 20px;
-  /* padding: 5px; */
+  padding: 5px;
   margin-top: 5px;
-  margin-left: -5px;
+  /* margin-left: 0px; */
 }
 
 #row6 {
-width: 505px;
+width: 498px;
 height: 35px;
 background-color: blue;
 color:white;
 font-size: 20px;
-/* padding: 5px; */
+padding: 5px;
 /* margin-bottom: 5px; */
 margin-top: 5px;
-margin-left: -5px;
+/* margin-left: -5px; */
 }
