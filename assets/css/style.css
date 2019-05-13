@@ -1,7 +1,7 @@
 .container {
   background-image: url("../images/background.jpg");
-  width: 1300px;
-  height: 600px;
+  width: 700px;
+  height: 625px;
   border: 5px solid purple;
   padding: 5px;
   margin-top: 10px;
@@ -9,6 +9,10 @@
   /* min-height: 500px;
   max-width: 950px;
   margin: auto; */
+}
+
+#main {
+  padding: 5px;
 }
 
 #row1 {
@@ -25,7 +29,7 @@
   padding: 5px;
   margin-bottom: 5px;
   width: 500px;
-  height: 200px;
+  height: 250px;
   background-color: peachpuff;
   font-style: initial;
   color: green;
@@ -34,15 +38,36 @@
 #row3 {
   width: 500px;
   height: 50px;
-  background-color: lightgreen;
+  /* background-color: lightgreen; */
   color: purple;
   font-size: 30px;
   padding: 5px;
   margin-bottom: 5px;
 }
 
+#row3a {
+  width: 225px;
+  height: 35px;
+  background-color: lightgreen;
+  color: purple;
+  font-size: 30px;
+  padding: 5px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+}
+
+#row3b {
+  width: 225px;
+  height: 35px;
+  background-color: skyblue;
+  color: purple;
+  font-size: 18px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
 #row4 {
-  width: 500px;
+  width: 498px;
   height: 90px;
   background-color: white;
   margin-bottom: 5px;
@@ -58,22 +83,23 @@
 
 #row5 {
   width: 505px;
-  height: 50px;
+  height: 25px;
   background-color: green;
   color: white;
   font-size: 20px;
-  padding: 5px;
+  /* padding: 5px; */
   margin-top: 5px;
+  margin-left: -5px;
 }
 
 #row6 {
 width: 505px;
-height: 50px;
+height: 35px;
 background-color: blue;
 color:white;
 font-size: 20px;
-padding: 5px;
+/* padding: 5px; */
 /* margin-bottom: 5px; */
 margin-top: 5px;
-/* margin-left: -10px; */
+margin-left: -5px;
 }
