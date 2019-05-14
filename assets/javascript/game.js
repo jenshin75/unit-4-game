@@ -1,3 +1,15 @@
+        // The example below shows $( document ).ready() and $( window ).on( "load" ) in action.
+        // The code tries to load a website URL in an <iframe> and checks for both events: 
+        $(document).ready(function () {
+            console.log("document loaded");
+        });
+
+        $(window).on("load", function () {
+            console.log("window loaded");
+        });
+
+
+
 var targetNumber = 0;
 
 var counter = 0;
