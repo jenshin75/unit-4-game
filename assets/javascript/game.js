@@ -1,68 +1,78 @@
-var targetNumber = 53;
-$("#number-to-guess").text(targetNumber);
+var targetNumber = 0;
+
+var counter = 0;
 
 var heart = "./assets/images/heart.jpg";
 var pentagon = "./assets/images/pentagon.jpg";
 var square = "./assets/images/square.jpg";
 var triangle = "./assets/images/triangle.jpg";
-var counter = 0;
-var imageurl = [heart, pentagon, square,triangle];
-console.log(imageurl);
+var imageURL = [heart, pentagon, square,triangle];
+
+// console.log(imageURL);
 
 // Now for the hard part. Creating multiple crystals each with their own unique number value.
 
 // We begin by expanding our array to include four options.
+// Each crystal should have a random hidden value between 1 - 12.
 var numberOptions = [10, 5, 3, 7];
 
+// This is the random number shown at the start of the game (between 19 and 120).
 var computerGuess = Math.floor(Math.random() * 102) + 19;
+console.log(computerGuess);
+$("#number-to-guess").text(computerGuess);
 
-// For each iteration, we will create an imageCrystal
-//   var imageCrystal = $("<img>");
-
-//   // First each crystal will be given the class ".crystal-image".
-//   // This will allow the CSS to take effect.
-//   imageCrystal.addClass("crystal-image");
-
-//   // Each imageCrystal will be given a src link to the crystal image
-//   imageCrystal.attr("src", "http://cdn.playbuzz.com/cdn/35910209-2844-45c0-b099-f4d82878d54f/00261fda-4062-4096-81fd-8cf96b9034e8.jpg");
-
-//   // Each imageCrystal will be given a data attribute called data-crystalValue.
-//   // This data attribute will be set equal to the array value.
-//   imageCrystal.attr("data-crystalvalue", numberOptions[i]);
- 
-
-//   // Lastly, each crystal image (with all it classes and attributes) will get added to the page.
-//   $("#MyTest").append(imageCrystal);
-
-
-//   var imageCrystal = $("<img>");
+//For each iteration, we will create an imageCrystal
+// var imageCrystal = $("<img>");
 
 //   // First each crystal will be given the class ".crystal-image".
 //   // This will allow the CSS to take effect.
-//   imageCrystal.addClass("crystal-image");
+// imageCrystal.addClass("crystal-image");
+
+// //   // Each imageCrystal will be given a src link to the crystal image
+// // imageCrystal.attr("src", "http://cdn.playbuzz.com/cdn/35910209-2844-45c0-b099-f4d82878d54f/00261fda-4062-4096-81fd-8cf96b9034e8.jpg");
+
+// //   // Each imageCrystal will be given a data attribute called data-crystalValue.
+// //   // This data attribute will be set equal to the array value.
+// imageCrystal.attr("data-crystalvalue", numberOptions[i]);
+ 
+//   // Lastly, each crystal image (with all it classes and attributes) will get added to the page.
+// $("#MyTest").append(imageCrystal);
+
+// var imageCrystal = $("<img>");
+
+//   // First each crystal will be given the class ".crystal-image".
+//   // This will allow the CSS to take effect.
+// imageCrystal.addClass("crystal-image");
 
 //   // Each imageCrystal will be given a src link to the crystal image
-//   imageCrystal.attr("src", "./assets/images/square.jpg");
+// imageCrystal.attr("src", "./assets/images/square.jpg");
 
 //   // Each imageCrystal will be given a data attribute called data-crystalValue.
 //   // This data attribute will be set equal to the array value.
-//   imageCrystal.attr("data-crystalvalue", numberOptions[i]);
-  
- 
+// imageCrystal.attr("data-crystalvalue", numberOptions[i]);
 
 //   // Lastly, each crystal image (with all it classes and attributes) will get added to the page.
-//   $("#MyTest").append(imageCrystal);
+// $("#MyTest").append(imageCrystal);
 
-//   var  newImage = "<img class='crystal-image' src='./assets/images/square.jpg' data-crystalvalue='3'>"
-//   $("#MyTest").append(newImage);
-
+// var  newImage = "<img class='crystal-image' src='./assets/images/square.jpg' data-crystalvalue='3'>"
+// $("#MyTest").append(newImage);
 
 // Next we create a for loop to create crystals for every numberOption.
+// Each crystal should have a random hidden value between 1 - 12.
+
 var crystalValue = [];
 
-for (var i = 0; i < imageurl.length; i++) {
-
+for (var i = 0; i < imageURL.length; i++) {
 crystalValue[i] = Math.floor(Math.random() * 12) + 1;
+}
+
+console.log(imageURL);
+console.log(crystalValue);
+
+// $("#crystalValue").text(crystalValue);
+$("#crystalValue").text(crystalValue);
+
+// $("#number-to-guess").text(computerGuess);
 
 // For each iteration, we will create an imageCrystal
 var imageCrystal = $("<img>");
@@ -72,7 +82,7 @@ var imageCrystal = $("<img>");
 imageCrystal.addClass("crystal-image");
 
 // Each imageCrystal will be given a src link to the crystal image
-imageCrystal.attr("src", imageurl[i]);
+imageCrystal.attr("src", imageURL[i]);
 
 // Each imageCrystal will be given a data attribute called data-crystalValue.
 // This data attribute will be set equal to the array value.
@@ -80,7 +90,6 @@ imageCrystal.attr("data-crystalvalue", i);
     
 // Lastly, each crystal image (with all it classes and attributes) will get added to the page.
 $("#crystals").append(imageCrystal);
-}
 
 // This time, our click event applies to every single crystal on the page. Not just one.
 $(".crystal-image").on("click", function() {
@@ -108,5 +117,6 @@ alert("You win!");
 else if (counter >= targetNumber) {
 alert("You lose!!");
 }
+
 
 });
