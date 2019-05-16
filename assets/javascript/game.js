@@ -86,10 +86,10 @@ function renderImages() {
         if (counter === targetNumber) {
             console.log("You win!");
             winCounter++;
-            // targetNumber = 0;
             $("#message").text("You win");
+            reset();
+            $("#newGame").text("");
             counter = 0;
-            reset()
             // start ()
         }
 
@@ -97,15 +97,15 @@ function renderImages() {
             console.log("You lose!");
             lossCounter++;
             $("#message").text("You lose");
-            // targetNumber = 0;
-            counter = 0;
             reset();
+            $("#newGame").text("");
+            counter = 0;
             // start()
         }
 
         $("#winCounter").text(winCounter);
         $("#lossCounter").text(lossCounter);
-
+        $("#newGame").text("");
 
     });
 
