@@ -1,7 +1,7 @@
 .container {
   background-image: url("../images/background.jpg");
   width: 700px;
-  height: 625px;
+  height: 675px;
   border: 5px solid purple;
   padding: 5px;
   margin-top: 10px;
@@ -58,7 +58,7 @@
 
 #row3b {
   width: 225px;
-  height: 35px;
+  height: 70px;
   background-color: skyblue;
   color: purple;
   font-size: 18px;
