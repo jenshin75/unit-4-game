@@ -76,7 +76,7 @@ console.log(crystalValue[crystalIndex], crystalIndex)
 // Every click, from every crystal adds to the global counter.
     
 counter += crystalValue[crystalIndex];
-console.log(counter)
+console.log(counter);
 
 $("#counter").text(counter);
 
@@ -84,14 +84,19 @@ $("#counter").text(counter);
 
 if (counter === targetNumber) {
     console.log("You win!");
+    winCounter++;
     // start ()
 }
     
 else if (counter > targetNumber) {
     console.log("You lose!");
+    lossCounter++;
     // start()
 }
     
+$("#winCounter").text(winCounter);
+$("#lossCounter").text(lossCounter);
+
 });
 
 }
@@ -99,6 +104,7 @@ else if (counter > targetNumber) {
 function start () {
     computerNumber()
     renderImages()
-    }
+}
 
-start ()
+start (
+)
