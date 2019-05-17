@@ -86,26 +86,21 @@ function renderImages() {
         if (counter === targetNumber) {
             console.log("You win!");
             winCounter++;
-            $("#message").text("You win");
+            $("#message").html(<h2>"YOU WIN!"</h2>);
             reset();
-            $("#newGame").text("");
-            counter = 0;
-            // start ()
+            $("#newGame").text("0");
         }
 
         else if (counter > targetNumber) {
             console.log("You lose!");
             lossCounter++;
-            $("#message").text("You lose");
+            $("#message").html(<h2>"YOU LOSE!"</h2>);
             reset();
-            $("#newGame").text("");
-            counter = 0;
-            // start()
+            $("#newGame").text("0");
         }
 
         $("#winCounter").text(winCounter);
         $("#lossCounter").text(lossCounter);
-        $("#newGame").text("");
 
     });
 
