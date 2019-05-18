@@ -109,15 +109,19 @@ function renderImages() {
             lossCounter++;
             $("#message").text("YOU LOSE!");
             // $("#message").text("");
-                    //Uncomment reset
-           reset();
+            //Uncomment reset
+            reset();
 
+        }
+        else{
+            $("#message").text("");
         }
 
         $("#winCounter").text(winCounter);
         $("#lossCounter").text(lossCounter);
  
         }
+        
 
 )};
 
@@ -125,7 +129,8 @@ function reset() {
     computerNumber()
     renderImages()
 
-            //reset your counter display here
+
+    //reset your counter display here
     $("#counter").text("");
 
     //reset your counter to 0
