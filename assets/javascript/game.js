@@ -13,12 +13,13 @@ var targetNumber = 0;
 var counter = 0;
 var winCounter = 0;
 var lossCounter = 0;
+var message = "";
 
 //Initialize wins and losses from the beginning
 $("#winCounter").text("0");
 $("#lossCounter").text("0");
+$("#message").text("");
 
-var message = "";
 var heart = "./assets/images/heart.jpg";
 var pentagon = "./assets/images/pentagon.jpg";
 var square = "./assets/images/square.jpg";
@@ -126,7 +127,7 @@ function reset() {
     $("#counter").text("");
     
     //reset your counter to 0
-    counter =0;
+    counter = 0;
 }
 
 reset()
