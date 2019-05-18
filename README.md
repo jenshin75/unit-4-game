@@ -13,8 +13,6 @@ The value of each shape is hidden from you until you click on it.
 Each time when the game starts, the game will change the values of each shape.
 
 
-
-
 **************************************************************************************************
 Sources Referenced/Used for Homework 4:
 

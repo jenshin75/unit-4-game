@@ -97,6 +97,7 @@ function renderImages() {
       
             winCounter++;
             $("#message").text("YOU WIN!");
+            // $("#message").text("");
         //Uncomment reset
             reset();
 
@@ -107,6 +108,7 @@ function renderImages() {
 
             lossCounter++;
             $("#message").text("YOU LOSE!");
+            // $("#message").text("");
                     //Uncomment reset
            reset();
 
@@ -125,7 +127,7 @@ function reset() {
 
             //reset your counter display here
     $("#counter").text("");
-    
+
     //reset your counter to 0
     counter = 0;
 }
