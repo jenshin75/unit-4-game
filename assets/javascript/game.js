@@ -14,6 +14,10 @@ var counter = 0;
 var winCounter = 0;
 var lossCounter = 0;
 
+//Initialize wins and losses from the beginning
+$("#winCounter").text("0");
+$("#lossCounter").text("0");
+
 var message = "";
 var heart = "./assets/images/heart.jpg";
 var pentagon = "./assets/images/pentagon.jpg";
@@ -55,7 +59,8 @@ function renderImages() {
 
         // Each imageCrystal will be given a data attribute called data-crystalValue.
         // This data attribute will be set equal to the array value.
-        imageCrystal.attr("data-crystalvalue", i);
+       //the value of the element is your random generator, not the i
+        imageCrystal.attr("data-crystalvalue",  crystalValue[i]);
 
         // Lastly, each crystal image (with all it classes and attributes) will get added to the page.
         $("#crystals").append(imageCrystal);
@@ -69,14 +74,17 @@ function renderImages() {
         // Using the .attr("data-crystalvalue") allows us to grab the value out of the "data-crystalvalue" attribute.
         // Since attributes on HTML elements are strings, we must convert it to an integer before adding to the counter
 
-        var crystalIndex = parseInt($(this).attr("data-crystalValue"));
 
-        console.log(crystalValue[crystalIndex], crystalIndex)
+        
+        //parseInt($(this).attr("data-crystalValue")) returns the random generator not index
+        var getCrystalRandomNumber = parseInt($(this).attr("data-crystalValue"));
+
+      //  console.log(crystalValue[crystalIndex], crystalIndex)
 
         // We then add the crystalValue to the user's "counter" which is a global variable.
         // Every click, from every crystal adds to the global counter.
 
-        counter += crystalValue[crystalIndex];
+        counter += getCrystalRandomNumber;
         console.log(counter);
 
         $("#counter").text(counter);
@@ -88,8 +96,8 @@ function renderImages() {
       
             winCounter++;
             $("#message").text("YOU WIN!");
-        
-            // reset();
+        //Uncomment reset
+            reset();
 
         }
 
@@ -98,7 +106,8 @@ function renderImages() {
 
             lossCounter++;
             $("#message").text("YOU LOSE!");
-            // reset();
+                    //Uncomment reset
+           reset();
 
         }
 
@@ -112,6 +121,12 @@ function renderImages() {
 function reset() {
     computerNumber()
     renderImages()
+
+            //reset your counter display here
+    $("#counter").text("");
+    
+    //reset your counter to 0
+    counter =0;
 }
 
 reset()
