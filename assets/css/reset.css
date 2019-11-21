@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html,
 body,
 div,
@@ -84,20 +83,16 @@ time,
 mark,
 audio,
 video {
-
-  /* Box-model */
-  padding: 0;
-
-  /* Positioning */
-  margin: 0;
-  font: inherit;
-
-  /* Typography */
-  font-size: 100%;
-  vertical-align: baseline;
-
-  /* Visual */
-  border: 0;
+/* Box-model */
+padding: 0;
+/* Positioning */
+margin: 0;
+font: inherit;
+/* Typography */
+font-size: 100%;
+vertical-align: baseline;
+/* Visual */
+border: 0;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -114,34 +109,27 @@ nav,
 section {
   display: block;
 }
-
 body {
   line-height: 1;
 }
-
 ol,
 ul {
   list-style: none;
 }
-
 blockquote,
 q {
   quotes: none;
 }
-
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-
   /* Misc */
   content: "";
   content: none;
 }
-
 table {
   border-spacing: 0;
-
   /* Visual */
   border-collapse: collapse;
 }

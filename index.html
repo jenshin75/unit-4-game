@@ -1,82 +1,58 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
 </head>
-
-<title>Assignment #4</title>
-
+<title>Crystals Collector</title>
 <body>
     <div class="container" id="main">
-
         <div id="row1">
-            <div class="col-sm-12 jumbotron">Crystals Collector!</div>
+            <div class="col-sm-12 jumbotron">Crystals Collector</div>
         </div>
-
         <div id="row2">
             <div class="col-sm-12">
-                <p>Rules:</p><br>
-                <p>You will be given a random number at the start of the game.</p><br>
-                <p>There are 4 shapes below. By clicking on a shape, you will add a specific amount of points to your
-                    total score.</p><br>
-                <p>You win the game by matching your total score to random number.</p><br>
-                <p>You lose the game if you total score goes above the random number.</p><br>
-                <p>The value of each shape is hidden from you until you click on it.</p><br>
-                <p>Each time when the game starts, the game will change the values of each shape.</p><br>
+                <p>RULES:</p>
+                <p>- You will be given a random number at the start of the game.</p>
+                <p>- There are 4 shapes below. 
+                    By clicking on a shape, you will add a specific amount of points to your total score.</p><br>
+                <p>SCORING:</p>
+                <p>- You win the game by matching your total score to random number.</p>
+                <p>- You lose the game if you total score goes above the random number.</p>
+                <p>- The value of each shape is hidden from you until you click on it.</p>
+                <p>- Each time when the game starts, the game will change the values of each shape.</p>
             </div>
         </div>
-
         <div id="row3a">
-            <div class="col-sm-12">
-                <p id="number-to-guess"></p>
+            <div class="col-sm-12">Random Number:
+                <span id="number-to-guess"></p>
             </div>
         </div>
-
         <div id="row3b">
-                <div class="col-sm-4">
-                    <span id="message"></span>
-                </div>
-
-                <div class="col-sm-4">Wins:
-                    <span id="winCounter"></span>
-                </div>
-                <div class="col-sm-4">Losses:
-                    <span id="lossCounter"></span>
-                </div>
-        </div>
-    
-        <div id="row4">
-            <div class="col-sm-12" id="crystals">
+            <div class="col-sm-4">
+                <span id="message"></span>
             </div>
-            <!-- <img id="heart" class="stones" src="./assets/images/heart.jpg" attr=""></img>
+            <div class="col-sm-4">
+            Wins: <span id="winCounter"></span>
+            </div>
+            <div class="col-sm-4">
+            Losses: <span id="lossCounter"></span>
+            </div>
+        </div>
+        <div id="row4">
+        <div class="col-sm-12" id="crystals"></div>
+        <!-- <img id="heart" class="stones" src="./assets/images/heart.jpg" attr=""></img>
         <img class="crystal-image" src="./assets/images/heart.jpg" alt="heart"> -->
         </div>
-
         <div id="row5">
-            <div class="col-sm-12">Your total score is:</div>
+            <div class="col-sm-12">Your total score is:
+                <span id="counter"></div>
         </div>
-
-        <div id="row6">
-            <div class="col-sm-12 jumbotron">
-                <p id="counter"></p>
-                <!-- <p id="newGame"></p> -->
-            </div>
-        </div>
-
-    </div>
-
-    <!-- <div id="MyTest"></div> -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
-
-    <script src="./assets/javascript/game.js"></script>
-
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+<script src="./assets/javascript/game.js"></script>
 </body>
-
 </html>
